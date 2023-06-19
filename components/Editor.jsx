@@ -2,7 +2,7 @@ import React from "react"
 import ReactMde from "react-mde"
 import Showdown from "showdown"
 
-export default function Editor({ currentNote, updateNote }) {
+export default function Editor({ TempNoteText, setTempNoteText }) {
     const [selectedTab, setSelectedTab] = React.useState("write")
 
     const converter = new Showdown.Converter({
